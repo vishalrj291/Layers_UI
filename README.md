@@ -13,18 +13,18 @@ Optimized user experience
 Tailwind CSS styling
 Clean and maintainable code structure
 # 🛠️ Tech Stack
-HTML5
-CSS3
-JavaScript (ES6)
-Tailwind CSS
+### HTML5
+### CSS3
+### JavaScript (ES6)
+### Tailwind CSS
 # 📱 Responsive Design
 
 ## The website is fully optimized for:
 
-Mobile Devices
-Tablets
-Laptops
-Desktop Screens
+### Mobile Devices
+### Tablets
+### Laptops
+### Desktop Screens
 # ⚙️ Installation
 
 ## Clone the repository:
@@ -38,25 +38,25 @@ git clone https://github.com/vishalrj291/Layers_UI.git
 Open index.html in your browser or run it using a local development server.
 
 # 🎨 Highlights
-Premium product presentation
-Smooth scrolling experience
-Interactive UI elements
-Responsive product cards
-Modern design aesthetics
-Fast loading and performance optimization
+### Premium product presentation
+### Smooth scrolling experience
+### Interactive UI elements
+### Responsive product cards
+### Modern design aesthetics
+### Fast loading and performance optimization
 🔮 Future Enhancements
-User Authentication
-Shopping Cart Backend Integration
-Wishlist Functionality
-Product Search and Filters
-Secure Payment Gateway
-Order Tracking System
+### User Authentication
+### Shopping Cart Backend Integration
+### Wishlist Functionality
+### Product Search and Filters
+### Secure Payment Gateway
+### Order Tracking System
 # Deployment 
-Vercel 
+### Vercel 
 ##
 # 👨‍💻 Author
 
-Vishal Raj
+### Vishal Raj
 
 📄 License
 
