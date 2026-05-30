@@ -29,7 +29,7 @@ Desktop Screens
 
 Clone the repository:
 
-git clone https://github.com/your-github-username/layers.git
+git clone https://github.com/vishalrj291/Layers_UI.git
 
 Navigate to the project folder:
 
