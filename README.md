@@ -1,8 +1,8 @@
-📱 Layers - Premium Phone Covers Website
+# 📱 Layers - Premium Phone Covers Website
 
 Layers is a modern and responsive e-commerce frontend designed to showcase premium phone covers with a clean user interface, smooth animations, and an engaging user experience. The project focuses on providing a visually appealing product browsing experience while maintaining fast performance and mobile responsiveness.
 
-🚀 Features
+# 🚀 Features
 Modern and responsive design
 Interactive product showcase
 Smooth animations and transitions
@@ -12,32 +12,32 @@ JavaScript-powered interactions
 Optimized user experience
 Tailwind CSS styling
 Clean and maintainable code structure
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 HTML5
 CSS3
 JavaScript (ES6)
 Tailwind CSS
-📱 Responsive Design
+# 📱 Responsive Design
 
-The website is fully optimized for:
+## The website is fully optimized for:
 
 Mobile Devices
 Tablets
 Laptops
 Desktop Screens
-⚙️ Installation
+# ⚙️ Installation
 
-Clone the repository:
+## Clone the repository:
 
 git clone https://github.com/vishalrj291/Layers_UI.git
 
-Navigate to the project folder:
+## Navigate to the project folder:
 
-cd layers
+### cd layers
 
 Open index.html in your browser or run it using a local development server.
 
-🎨 Highlights
+# 🎨 Highlights
 Premium product presentation
 Smooth scrolling experience
 Interactive UI elements
@@ -51,7 +51,10 @@ Wishlist Functionality
 Product Search and Filters
 Secure Payment Gateway
 Order Tracking System
-👨‍💻 Author
+# Deployment 
+Vercel 
+##
+# 👨‍💻 Author
 
 Vishal Raj
 
