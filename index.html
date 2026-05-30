@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layers — Premium Phone Skins &amp; Covers</title>
+  <meta name="description" content="Layers offers ultra-premium phone skins and covers for all devices. Explore original designs, vibrant collections, and apply your unique style.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="page-loader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- CURSOR GLOW -->
+  <div id="cursor-glow"></div>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container"></div>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div id="menu-overlay"></div>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button id="menu-close-btn" aria-label="Close menu">&#x2715;</button>
+    <div style="padding-top: 2.5rem;">
+      <img src="layersassets2/asset 0.jpeg" alt="Layers logo" style="width:56px; margin-bottom:1.5rem; border-radius:8px;">
+      <nav>
+        <span class="mobile-nav-link">Mobile Skins</span>
+        <span class="mobile-nav-link">Laptop Skins</span>
+        <span class="mobile-nav-link">Skin Collections</span>
+        <span class="mobile-nav-link">Device Not Found?</span>
+        <span class="mobile-nav-link">How to Apply</span>
+        <span class="mobile-nav-link">Login</span>
+      </nav>
+    </div>
+    <div style="margin-top:auto; padding-bottom:1rem;">
+      <div style="display:flex; gap:1rem; margin-bottom:1rem;">
+        <i class="fa-brands fa-instagram" style="font-size:1.4rem; color:#6366f1; cursor:pointer;"></i>
+        <i class="fa-brands fa-twitter" style="font-size:1.4rem; color:#6366f1; cursor:pointer;"></i>
+        <i class="fa-brands fa-youtube" style="font-size:1.4rem; color:#6366f1; cursor:pointer;"></i>
+      </div>
+      <p style="font-size:0.75rem; color:#9ca3af;">© 2024 Layers. All rights reserved.</p>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       NAVBAR
+       ===================================================== -->
+  <nav id="navbar">
+    <div class="nav-inner flex w-full justify-center items-center">
+      <div class="flex w-[94%] justify-between items-center">
+
+        <!-- LEFT: Hamburger (mobile) -->
+        <div id="hamburger-btn" class="hamburger small:flex hidden" aria-label="Open menu" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- LEFT: Brand image (desktop) -->
+        <div class="hidden small:hidden cursor-pointer nav-icon reveal reveal-left">
+          <img src="layersassets2/asset 54.jpeg" alt="Layers brand" style="height:36px; object-fit:contain; border-radius:6px;" loading="lazy">
+        </div>
+
+        <!-- CENTER: Logo -->
+        <div class="flex items-center justify-center small:absolute small:left-1/2 small:-translate-x-1/2">
+          <img class="w-14 cursor-pointer nav-icon" src="layersassets2/asset 0.jpeg" alt="Layers logo" style="border-radius:8px;">
+        </div>
+
+        <!-- RIGHT: Nav links (desktop) + icons -->
+        <div class="flex gap-10 items-center">
+          <!-- Desktop nav links -->
+          <div class="flex items-center gap-8 small:hidden">
+            <span class="nav-link">Mobile Skins</span>
+            <span class="nav-link">Laptop Skins</span>
+            <span class="nav-link">Skin Collections</span>
+            <span class="nav-link">Device Not Found?</span>
+            <span class="nav-link">How to Apply</span>
+            <span class="nav-link">Login</span>
+          </div>
+          <!-- Icons -->
+          <div class="flex items-center gap-6 vsmall:gap-4">
+            <span class="nav-icon" title="Wishlist">
+              <i class="fa-regular fa-heart" style="font-size:1.15rem; color:#1a1a1a;"></i>
+            </span>
+            <span class="nav-icon vsmall:hidden" title="Search">
+              <i class="fa-solid fa-magnifying-glass" style="font-size:1.05rem; color:#1a1a1a;"></i>
+            </span>
+            <span id="cart-btn" class="nav-icon" title="Cart" style="position:relative; cursor:pointer;">
+              <i class="fa-solid fa-bag-shopping" style="font-size:1.15rem; color:#1a1a1a;"></i>
+              <span id="cart-count" style="position:absolute;top:-8px;right:-8px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:white;font-size:0.6rem;font-weight:700;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;">0</span>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- =====================================================
+       HERO SECTION 1
+       ===================================================== -->
+  <section class="hero-section w-full relative">
+    <!-- Floating orbs -->
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <img class="w-full extraSmall:hidden" src="layersassets2/asset 1.png" alt="Layers Premium Phone Covers Hero" style="display:block; position:relative; z-index:0.5;">
+    <img class="w-full hidden extraSmall:block" src="layersassets2/asset 2.png" alt="Layers Premium Phone Covers Hero Mobile" style="display:block; position:relative; z-index:0.5;">
+
+    <!-- CTA overlay -->
+    <div class="hero-cta-overlay" style="z-index:6;">
+      <div class="hero-badge">✦ New Collection 2024</div>
+      <h1 class="hero-headline">Wear Your Personality</h1>
+      <button class="btn-primary" id="hero-cta-btn" onclick="document.getElementById('product-section-1').scrollIntoView({behavior:'smooth'})">
+        Shop Now &nbsp;<i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       BRAND CAROUSEL — SELECT YOUR BRAND
+       ===================================================== -->
+  <section class="w-full py-12 overflow-hidden" id="brand-section">
+    <div class="section-header reveal">
+      <p class="section-title text-center">Select Your Brand</p>
+      <p class="section-subtitle text-center">Find the perfect skin for your device</p>
+    </div>
+    <!-- Carousel track — duplicated for seamless loop -->
+    <div style="overflow:hidden; width:100%;">
+      <div class="brand-track" id="brand-track">
+        <!-- Set 1 -->
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 9.jpeg" alt="Apple" loading="lazy"></div><span class="brand-label">Apple</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 10.jpeg" alt="Samsung" loading="lazy"></div><span class="brand-label">Samsung</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 11.jpeg" alt="OnePlus" loading="lazy"></div><span class="brand-label">OnePlus</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 12.jpeg" alt="Xiaomi" loading="lazy"></div><span class="brand-label">Xiaomi</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 13.jpeg" alt="Realme" loading="lazy"></div><span class="brand-label">Realme</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 14.jpeg" alt="Oppo" loading="lazy"></div><span class="brand-label">Oppo</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 15.jpeg" alt="Vivo" loading="lazy"></div><span class="brand-label">Vivo</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 16.jpeg" alt="Nothing" loading="lazy"></div><span class="brand-label">Nothing</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 17.jpeg" alt="Google" loading="lazy"></div><span class="brand-label">Google</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 18.png" alt="Sony" loading="lazy"></div><span class="brand-label">Sony</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 19.jpeg" alt="Motorola" loading="lazy"></div><span class="brand-label">Motorola</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 20.jpeg" alt="Poco" loading="lazy"></div><span class="brand-label">Poco</span></div>
+        <!-- Set 2 (duplicate for seamless loop) -->
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 9.jpeg" alt="Apple" loading="lazy"></div><span class="brand-label">Apple</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 10.jpeg" alt="Samsung" loading="lazy"></div><span class="brand-label">Samsung</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 11.jpeg" alt="OnePlus" loading="lazy"></div><span class="brand-label">OnePlus</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 12.jpeg" alt="Xiaomi" loading="lazy"></div><span class="brand-label">Xiaomi</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 13.jpeg" alt="Realme" loading="lazy"></div><span class="brand-label">Realme</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 14.jpeg" alt="Oppo" loading="lazy"></div><span class="brand-label">Oppo</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 15.jpeg" alt="Vivo" loading="lazy"></div><span class="brand-label">Vivo</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 16.jpeg" alt="Nothing" loading="lazy"></div><span class="brand-label">Nothing</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 17.jpeg" alt="Google" loading="lazy"></div><span class="brand-label">Google</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 18.png" alt="Sony" loading="lazy"></div><span class="brand-label">Sony</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 19.jpeg" alt="Motorola" loading="lazy"></div><span class="brand-label">Motorola</span></div>
+        <div class="brand-item"><div class="brand-circle"><img src="layersassets2/asset 20.jpeg" alt="Poco" loading="lazy"></div><span class="brand-label">Poco</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       PRODUCT GRID 1 — LAYERS ORIGINAL DESIGNS
+       ===================================================== -->
+  <section class="products-section w-full" id="product-section-1">
+    <div class="w-[94%] mx-auto flex flex-col items-center">
+      <div class="section-header reveal">
+        <h2 class="section-title">Layers Original Designs</h2>
+        <p class="section-subtitle">Crafted with precision for every taste</p>
+      </div>
+      <div class="w-full grid grid-cols-4 gap-5 vsmall:grid-cols-2 py-2">
+
+        <!-- Card 1 -->
+        <div class="flip-card-wrapper reveal delay-1">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 21.jpeg" alt="Black Crack Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 21.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Black Crack</p>
+                <p class="card-back-desc">Ultra-thin precision-cut vinyl skin. Bubble-free application.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Black Crack" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Black Crack</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flip-card-wrapper reveal delay-2">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 22.jpeg" alt="Galaxy Burst Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 22.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Galaxy Burst</p>
+                <p class="card-back-desc">Premium matte finish skin. Scratch-resistant and durable.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Galaxy Burst" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Galaxy Burst</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flip-card-wrapper reveal delay-3">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 23.png" alt="Marble Luxe Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 23.png" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Marble Luxe</p>
+                <p class="card-back-desc">Elegant marble print. Precision-cut for all models.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Marble Luxe" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Marble Luxe</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flip-card-wrapper reveal delay-4">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 24.jpeg" alt="Neon Grid Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 24.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Neon Grid</p>
+                <p class="card-back-desc">Futuristic neon lines. Vibrant, fade-resistant colors.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Neon Grid" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Neon Grid</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="flip-card-wrapper reveal delay-1">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 25.png" alt="Retro Wave Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 25.png" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Retro Wave</p>
+                <p class="card-back-desc">80s inspired retro aesthetic. Bold and expressive.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Retro Wave" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Retro Wave</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flip-card-wrapper reveal delay-2">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 26.jpeg" alt="Forest Spirit Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 26.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Forest Spirit</p>
+                <p class="card-back-desc">Nature-inspired print. Calming earthy tones.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Forest Spirit" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Forest Spirit</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="flip-card-wrapper reveal delay-3">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 27.png" alt="Arctic Frost Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 27.png" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Arctic Frost</p>
+                <p class="card-back-desc">Icy crystal texture. Slim profile, zero bulk.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Arctic Frost" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Arctic Frost</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="flip-card-wrapper reveal delay-4">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 28.jpeg" alt="Carbon Fiber Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 28.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Carbon Fiber</p>
+                <p class="card-back-desc">Premium carbon weave pattern. Textured finish.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Carbon Fiber" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Carbon Fiber</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+      </div><!-- end grid -->
+    </div>
+  </section>
+
+  <!-- =====================================================
+       HERO SECTION 2
+       ===================================================== -->
+  <section class="hero-section w-full relative" style="margin-top:3rem;">
+    <img class="w-full extraSmall:hidden" src="layersassets2/asset 29.jpeg" alt="Layers Collection Banner" style="display:block;">
+    <img class="w-full hidden extraSmall:block" src="layersassets2/asset 30.jpeg" alt="Layers Collection Banner Mobile" style="display:block;">
+  </section>
+
+  <!-- =====================================================
+       PRODUCT GRID 2
+       ===================================================== -->
+  <section class="products-section w-full" id="product-section-2">
+    <div class="w-[94%] mx-auto flex flex-col items-center">
+      <div class="section-header reveal">
+        <h2 class="section-title">Bestseller Collection</h2>
+        <p class="section-subtitle">Most loved by our community</p>
+      </div>
+      <div class="w-full grid grid-cols-4 gap-5 vsmall:grid-cols-2 py-2">
+
+        <!-- Card 9 -->
+        <div class="flip-card-wrapper reveal delay-1">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 31.jpeg" alt="Sunset Bloom Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 31.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Sunset Bloom</p>
+                <p class="card-back-desc">Warm gradient tones. A summer vibe all year round.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Sunset Bloom" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Sunset Bloom</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="flip-card-wrapper reveal delay-2">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 32.jpeg" alt="Midnight Sky Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 32.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Midnight Sky</p>
+                <p class="card-back-desc">Deep space aesthetic. Rich dark tones with stellar accents.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Midnight Sky" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Midnight Sky</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="flip-card-wrapper reveal delay-3">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 33.jpeg" alt="Rose Petals Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 33.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Rose Petals</p>
+                <p class="card-back-desc">Delicate floral pattern. Elegance redefined.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Rose Petals" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Rose Petals</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="flip-card-wrapper reveal delay-4">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 34.jpeg" alt="Geometric Storm Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 34.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Geometric Storm</p>
+                <p class="card-back-desc">Sharp angles, bold geometry. A statement piece.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Geometric Storm" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Geometric Storm</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="flip-card-wrapper reveal delay-1">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 35.jpeg" alt="Lava Flow Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 35.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Lava Flow</p>
+                <p class="card-back-desc">Fiery molten texture. Intense and unforgettable.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Lava Flow" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Lava Flow</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="flip-card-wrapper reveal delay-2">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 36.jpeg" alt="Ocean Depth Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 36.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Ocean Depth</p>
+                <p class="card-back-desc">Deep blue serenity. Calm and commanding.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Ocean Depth" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Ocean Depth</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="flip-card-wrapper reveal delay-3">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 37.jpeg" alt="Zen Garden Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 37.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Zen Garden</p>
+                <p class="card-back-desc">Minimalist Japanese-inspired design. Pure focus.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Zen Garden" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Zen Garden</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="flip-card-wrapper reveal delay-4">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 38.jpeg" alt="Acid Wash Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 38.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Acid Wash</p>
+                <p class="card-back-desc">Streetwear-inspired. Distressed vintage aesthetic.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Acid Wash" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Acid Wash</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       HERO SECTION 3
+       ===================================================== -->
+  <section class="hero-section w-full relative" style="margin-top:3rem;">
+    <img class="w-full extraSmall:hidden" src="layersassets2/asset 39.png" alt="Layers New Arrivals Banner" style="display:block;">
+    <img class="w-full hidden extraSmall:block" src="layersassets2/asset 40.png" alt="Layers New Arrivals Banner Mobile" style="display:block;">
+  </section>
+
+  <!-- =====================================================
+       PRODUCT GRID 3 — NEW ARRIVALS
+       ===================================================== -->
+  <section class="products-section w-full" id="product-section-3">
+    <div class="w-[94%] mx-auto flex flex-col items-center">
+      <div class="section-header reveal">
+        <h2 class="section-title">New Arrivals</h2>
+        <p class="section-subtitle">Fresh drops — be the first to style up</p>
+      </div>
+      <div class="w-full grid grid-cols-4 gap-5 vsmall:grid-cols-2 py-2">
+
+        <!-- Card 17 — New Badge -->
+        <div class="flip-card-wrapper reveal delay-1" style="position:relative;">
+          <div class="card-back-badge">New</div>
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 41.jpeg" alt="Prism Shift Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 41.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Prism Shift</p>
+                <p class="card-back-desc">Iridescent holographic finish. Shifts with light.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Prism Shift" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Prism Shift</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 18 — New Badge -->
+        <div class="flip-card-wrapper reveal delay-2" style="position:relative;">
+          <div class="card-back-badge">New</div>
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 42.jpeg" alt="Ink Splash Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 42.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Ink Splash</p>
+                <p class="card-back-desc">Abstract ink art. Painterly, one-of-a-kind aesthetic.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Ink Splash" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Ink Splash</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 19 — New Badge -->
+        <div class="flip-card-wrapper reveal delay-3" style="position:relative;">
+          <div class="card-back-badge">New</div>
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 43.jpeg" alt="Cipher Code Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 43.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Cipher Code</p>
+                <p class="card-back-desc">Tech-inspired matrix print. For the digital native.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Cipher Code" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Cipher Code</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="flip-card-wrapper reveal delay-4">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 44.jpeg" alt="Desert Sand Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 44.jpeg" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Desert Sand</p>
+                <p class="card-back-desc">Warm sandy tones. Minimal and sophisticated.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Desert Sand" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Desert Sand</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="flip-card-wrapper reveal delay-1">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 45.png" alt="Velvet Noir Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 45.png" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Velvet Noir</p>
+                <p class="card-back-desc">Luxurious velvet texture simulation. Feels premium.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Velvet Noir" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Velvet Noir</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="flip-card-wrapper reveal delay-2">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 46.png" alt="Terracotta Dream Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 46.png" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Terracotta Dream</p>
+                <p class="card-back-desc">Earth tones inspired by sun-dried clay. Earthy chic.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Terracotta Dream" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Terracotta Dream</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="flip-card-wrapper reveal delay-3">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 47.png" alt="Electric Blue Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 47.png" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★★</div>
+                <p class="card-back-title">Electric Blue</p>
+                <p class="card-back-desc">High voltage blue. Energetic and eye-catching.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Electric Blue" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Electric Blue</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+        <!-- Card 24 -->
+        <div class="flip-card-wrapper reveal delay-4">
+          <div class="flip-card" style="aspect-ratio: 3/4;">
+            <div class="flip-card-front">
+              <img src="layersassets2/asset 48.png" alt="Chrome Mirror Skin" loading="lazy">
+            </div>
+            <div class="flip-card-back">
+              <img class="card-back-bg-img" src="layersassets2/asset 48.png" alt="">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <div class="card-back-stars">★★★★☆</div>
+                <p class="card-back-title">Chrome Mirror</p>
+                <p class="card-back-desc">Mirror chrome finish. Futuristic reflective surface.</p>
+                <p class="card-back-price">₹599</p>
+                <button class="card-back-btn" data-name="Chrome Mirror" data-price="₹599">
+                  <i class="fa-solid fa-bag-shopping" style="margin-right:6px;"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-name">Chrome Mirror</span>
+            <span class="card-price">₹599</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       INSTAGRAM SECTION
+       ===================================================== -->
+  <section class="w-full pt-16 pb-4" id="instagram-section">
+    <div class="section-header reveal" style="text-align:center; margin-bottom:2rem;">
+      <h2 class="section-title" style="display:inline-flex; align-items:center; gap:0.5rem;">
+        <i class="fa-brands fa-instagram" style="background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); -webkit-background-clip:text; -webkit-text-fill-color:transparent;"></i>
+        Follow Us on Instagram
+      </h2>
+      <p class="section-subtitle">Tag #LayersSkins to be featured</p>
+    </div>
+    <div class="w-full grid grid-cols-4 vsmall:grid-cols-2 gap-1">
+
+      <div class="insta-card">
+        <img src="layersassets2/asset 49.jpeg" alt="Layers Instagram" loading="lazy">
+        <div class="insta-overlay">
+          <img class="w-10" src="layersassets2/asset 69.svg" alt="Instagram icon">
+        </div>
+      </div>
+
+      <div class="insta-card">
+        <img src="layersassets2/asset 50.jpeg" alt="Layers Instagram" loading="lazy">
+        <div class="insta-overlay">
+          <img class="w-10" src="layersassets2/asset 69.svg" alt="Instagram icon">
+        </div>
+      </div>
+
+      <div class="insta-card">
+        <img src="layersassets2/asset 51.jpeg" alt="Layers Instagram" loading="lazy">
+        <div class="insta-overlay">
+          <img class="w-10" src="layersassets2/asset 69.svg" alt="Instagram icon">
+        </div>
+      </div>
+
+      <div class="insta-card">
+        <img src="layersassets2/asset 52.jpeg" alt="Layers Instagram" style="width:100%; aspect-ratio:1/1; object-fit:cover;" loading="lazy">
+        <div class="insta-overlay">
+          <img class="w-10" src="layersassets2/asset 69.svg" alt="Instagram icon">
+        </div>
+      </div>
+
+      <div class="insta-card">
+        <img src="layersassets2/asset 53.jpeg" alt="Layers Instagram" style="width:100%; aspect-ratio:1/1; object-fit:cover;" loading="lazy">
+        <div class="insta-overlay">
+          <img class="w-10" src="layersassets2/asset 69.svg" alt="Instagram icon">
+        </div>
+      </div>
+
+      <div class="insta-card">
+        <img src="layersassets2/asset 54.jpeg" alt="Layers Instagram" loading="lazy">
+        <div class="insta-overlay">
+          <img class="w-10" src="layersassets2/asset 69.svg" alt="Instagram icon">
+        </div>
+      </div>
+
+      <div class="insta-card">
+        <img src="layersassets2/asset 55.jpeg" alt="Layers Instagram" loading="lazy">
+        <div class="insta-overlay">
+          <img class="w-10" src="layersassets2/asset 69.svg" alt="Instagram icon">
+        </div>
+      </div>
+
+      <div class="insta-card">
+        <img src="layersassets2/asset 56.jpeg" alt="Layers Instagram" loading="lazy">
+        <div class="insta-overlay">
+          <img class="w-10" src="layersassets2/asset 69.svg" alt="Instagram icon">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FEATURES / USP SECTION
+       ===================================================== -->
+  <section class="w-full py-20" id="features-section">
+    <div class="w-[90%] mx-auto">
+      <div class="section-header reveal" style="text-align:center;">
+        <h2 class="section-title">Why Choose Layers?</h2>
+        <p class="section-subtitle">Premium quality meets everyday convenience</p>
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:1.5rem;" class="vsmall:grid-cols-1">
+
+        <div class="feature-card reveal delay-1">
+          <img class="feature-icon" src="layersassets2/asset 71.svg" alt="Same Day Dispatch">
+          <p style="font-size:1.1rem; font-weight:700; color:#0a0a0a;">Same Day Dispatch</p>
+          <p style="font-size:0.875rem; color:#6b7280; text-align:center; line-height:1.6;">All orders placed before 12 pm Monday to Friday are dispatched the same day.</p>
+        </div>
+
+        <div class="feature-card reveal delay-2">
+          <img class="feature-icon" src="layersassets2/asset 72.svg" alt="Free Shipping">
+          <p style="font-size:1.1rem; font-weight:700; color:#0a0a0a;">Free Shipping</p>
+          <p style="font-size:0.875rem; color:#6b7280; text-align:center; line-height:1.6;">Enjoy free shipping on all orders. No minimum order value required.</p>
+        </div>
+
+        <div class="feature-card reveal delay-3">
+          <img class="feature-icon" src="layersassets2/asset 73.svg" alt="Easy Returns">
+          <p style="font-size:1.1rem; font-weight:700; color:#0a0a0a;">Easy Returns</p>
+          <p style="font-size:0.875rem; color:#6b7280; text-align:center; line-height:1.6;">Hassle-free returns within 7 days. Your satisfaction is our priority.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="w-full min-h-[320px]">
+    <div class="w-full flex justify-around footer:grid footer:px-6 footer:pb-10 footer:gap-6 footer:grid-cols-2 pt-14 pb-8">
+
+      <!-- Vision -->
+      <div style="display:flex; flex-direction:column; gap:0.75rem; max-width:240px;">
+        <img src="layersassets2/asset 0.jpeg" alt="Layers logo" style="width:48px; border-radius:8px; margin-bottom:0.25rem;">
+        <p style="font-size:0.75rem; font-weight:600; letter-spacing:0.1em; color:#9ca3af; text-transform:uppercase;">Vision</p>
+        <p style="font-size:1.05rem; font-weight:700; color:#1a1a1a; line-height:1.4;">Creativity, Expression, &amp; Exploration</p>
+        <p style="font-size:0.8rem; color:#6b7280; line-height:1.6;">Bringing your device to life with premium skins since 2020.</p>
+      </div>
+
+      <!-- Pages -->
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
+        <p style="font-size:0.75rem; font-weight:600; letter-spacing:0.1em; color:#9ca3af; text-transform:uppercase;">Pages</p>
+        <span class="footer-link">About Us</span>
+        <span class="footer-link">Contact Us</span>
+        <span class="footer-link">Terms &amp; Conditions</span>
+        <span class="footer-link">Privacy Policy</span>
+        <span class="footer-link">Refunds / Shipping Policy</span>
+        <span class="footer-link">FAQ</span>
+      </div>
+
+      <!-- My Accounts -->
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
+        <p style="font-size:0.75rem; font-weight:600; letter-spacing:0.1em; color:#9ca3af; text-transform:uppercase;">My Account</p>
+        <span class="footer-link">Login</span>
+        <span class="footer-link">Register</span>
+        <span class="footer-link">Track Order</span>
+        <span class="footer-link">Wishlist</span>
+      </div>
+
+      <!-- Social -->
+      <div style="display:flex; flex-direction:column; gap:0.875rem;">
+        <p style="font-size:0.75rem; font-weight:600; letter-spacing:0.1em; color:#9ca3af; text-transform:uppercase;">Follow Us</p>
+        <div class="social-link">
+          <img class="w-5" src="layersassets2/asset 66.svg" alt="Twitter">
+          <span>Twitter</span>
+        </div>
+        <div class="social-link">
+          <img class="w-5" src="layersassets2/asset 67.svg" alt="Facebook">
+          <span>Facebook</span>
+        </div>
+        <div class="social-link">
+          <img class="w-5" src="layersassets2/asset 68.svg" alt="YouTube">
+          <span>YouTube</span>
+        </div>
+        <!-- FIXED: was LayersProject/asset 62.svg (broken path) -->
+        <div class="social-link">
+          <img class="w-5" src="layersassets2/asset 62.svg" alt="Instagram">
+          <span>Instagram</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer divider & copyright -->
+    <div style="height:1px; background:rgba(101,101,101,0.15); margin:0 1.5rem;"></div>
+    <div style="padding:1.5rem; text-align:center;">
+      <p style="font-size:0.8rem; color:#9ca3af;">© 2024 Layers. All rights reserved. Made with ♥ in India.</p>
+    </div>
+  </footer>
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+  <script>
+  (function () {
+    'use strict';
+
+    /* ====================================================
+       1. PAGE LOADER
+       ==================================================== */
+    const loader = document.getElementById('page-loader');
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        loader.classList.add('hidden');
+        document.body.style.overflow = '';
+        initReveal();
+      }, 400);
+    });
+    // Prevent scroll flash before load
+    document.body.style.overflow = 'hidden';
+
+    /* ====================================================
+       2. CURSOR GLOW (desktop only)
+       ==================================================== */
+    const cursorGlow = document.getElementById('cursor-glow');
+    if (window.matchMedia('(pointer: fine)').matches) {
+      let cx = 0, cy = 0, tx = 0, ty = 0;
+      document.addEventListener('mousemove', (e) => {
+        tx = e.clientX;
+        ty = e.clientY;
+      });
+      function animateCursor() {
+        cx += (tx - cx) * 0.12;
+        cy += (ty - cy) * 0.12;
+        cursorGlow.style.left = cx + 'px';
+        cursorGlow.style.top = cy + 'px';
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+    } else {
+      cursorGlow.style.display = 'none';
+    }
+
+    /* ====================================================
+       3. NAVBAR — SCROLL GLASSMORPHISM
+       ==================================================== */
+    const navbar = document.getElementById('navbar');
+    let lastScrollY = 0;
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      lastScrollY = scrollY;
+    }, { passive: true });
+
+    /* ====================================================
+       4. MOBILE MENU
+       ==================================================== */
+    const hamburger = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const menuCloseBtn = document.getElementById('menu-close-btn');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      menuOverlay.classList.add('open');
+      hamburger.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      menuOverlay.classList.remove('open');
+      hamburger.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMenu);
+    hamburger.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') openMenu(); });
+    menuCloseBtn.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+
+    // Close on mobile nav link click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    /* ====================================================
+       5. SCROLL REVEAL — INTERSECTION OBSERVER
+       ==================================================== */
+    function initReveal() {
+      const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+      if (!revealEls.length) return;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+      revealEls.forEach(el => observer.observe(el));
+    }
+
+    /* ====================================================
+       6. RIPPLE EFFECT ON BUTTONS
+       ==================================================== */
+    function addRipple(e) {
+      const btn = e.currentTarget;
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = e.clientX - rect.left - size / 2;
+      const y = e.clientY - rect.top - size / 2;
+
+      const ripple = document.createElement('span');
+      ripple.classList.add('ripple-effect');
+      ripple.style.cssText = `width:${size}px;height:${size}px;left:${x}px;top:${y}px;`;
+      btn.appendChild(ripple);
+      ripple.addEventListener('animationend', () => ripple.remove());
+    }
+
+    document.querySelectorAll('.btn-primary, .card-back-btn').forEach(btn => {
+      btn.addEventListener('click', addRipple);
+    });
+
+    /* ====================================================
+       7. CART — ADD TO CART + TOAST
+       ==================================================== */
+    let cartCount = 0;
+    const cartCountEl = document.getElementById('cart-count');
+    const cartBtn = document.getElementById('cart-btn');
+
+    function showToast(name, price) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.innerHTML = `
+        <div class="toast-icon">✓</div>
+        <div>
+          <div style="font-weight:700; font-size:0.85rem;">${name}</div>
+          <div style="font-size:0.75rem; color:#9ca3af; margin-top:2px;">${price} added to cart</div>
+        </div>
+      `;
+      container.appendChild(toast);
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => toast.classList.add('show'));
+      });
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 400);
+      }, 3000);
+    }
+
+    document.querySelectorAll('.card-back-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const name = btn.dataset.name || 'Skin';
+        const price = btn.dataset.price || '₹599';
+        cartCount++;
+        cartCountEl.textContent = cartCount;
+        cartCountEl.style.opacity = '1';
+        // Animate cart icon
+        cartBtn.style.transform = 'scale(1.3)';
+        setTimeout(() => cartBtn.style.transform = '', 200);
+        showToast(name, price);
+      });
+    });
+
+    /* ====================================================
+       8. MAGNETIC BUTTON EFFECT (hero CTA)
+       ==================================================== */
+    const magnetBtns = document.querySelectorAll('.btn-primary');
+    if (window.matchMedia('(pointer: fine)').matches) {
+      magnetBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+          const rect = btn.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          btn.style.transform = `translateX(${x * 0.2}px) translateY(${y * 0.3}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+          btn.style.transform = '';
+        });
+      });
+    }
+
+    /* ====================================================
+       9. CARD TILT EFFECT
+       ==================================================== */
+    if (window.matchMedia('(pointer: fine)').matches) {
+      document.querySelectorAll('.flip-card-wrapper').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          // Only tilt when front is showing
+          const flipCard = card.querySelector('.flip-card');
+          if (flipCard && getComputedStyle(flipCard).transform.includes('180')) return;
+
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          // Subtle tilt is handled by the 3D hover lift in CSS; add shadow depth here
+          card.style.boxShadow = `
+            ${-x * 16}px ${y * 16}px 40px rgba(0,0,0,0.14),
+            ${-x * 4}px ${y * 4}px 12px rgba(0,0,0,0.08)
+          `;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.boxShadow = '';
+        });
+      });
+    }
+
+    /* ====================================================
+       10. LAZY IMAGE LOADING
+       ==================================================== */
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    if ('IntersectionObserver' in window) {
+      const imgObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.classList.add('loaded');
+            imgObserver.unobserve(img);
+          }
+        });
+      }, { rootMargin: '200px' });
+      lazyImages.forEach(img => {
+        img.classList.add('lazy');
+        imgObserver.observe(img);
+      });
+    }
+
+    /* ====================================================
+       11. FEATURES SECTION — RESPONSIVE GRID
+       ==================================================== */
+    function setFeaturesGrid() {
+      const grid = document.querySelector('#features-section [style*="grid-template-columns"]');
+      if (!grid) return;
+      if (window.innerWidth <= 750) {
+        grid.style.gridTemplateColumns = '1fr';
+      } else {
+        grid.style.gridTemplateColumns = 'repeat(3, 1fr)';
+      }
+    }
+    setFeaturesGrid();
+    window.addEventListener('resize', setFeaturesGrid, { passive: true });
+
+    /* ====================================================
+       12. HERO CTA RIPPLE
+       ==================================================== */
+    const heroCta = document.getElementById('hero-cta-btn');
+    if (heroCta) heroCta.addEventListener('click', addRipple);
+
+  })();
+  </script>
+
+</body>
+</html>
